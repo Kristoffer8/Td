@@ -1,0 +1,104 @@
+<html>
+
+<head>
+  
+    <link rel="stylesheet" href="styles/details.css" />
+    <script type="text/javascript" src="libs/vue.js"></script>
+    <script type="text/javascript" src="libs/axios.js"></script>
+</head>
+<body>
+   
+    <div class="title">Clothes
+        <div class="mov_left" style="margin-top: -5px;">
+        </div>
+    </div>
+    
+    <a href="index.html" class="home-btn">Home</a>
+
+    <div id="update">
+
+        <ul class="user-list">
+
+
+            <div class="container">
+                <label class="name">Name</label>&nbsp;&nbsp;
+                <div class="mov_left">
+                    <input type="text" v-model="cloth.Name"><br>
+                </div>
+
+            </div>
+            <div class="container">
+                <label class="name">Size</label>&nbsp;&nbsp;
+                <div class="mov_left">
+                    <input type="text" v-model="cloth.Size"><br>
+                </div>
+
+
+            </div>
+            <div class="container">
+                <label class="name">Color</label>&nbsp;&nbsp;
+                <div class="mov_left">
+                    <input type="text" v-model="cloth.Color"><br>
+                </div>
+
+
+            </div>
+            <div class="container">
+                <label class="name">Model</label>&nbsp;&nbsp;
+                <div class="mov_left">
+                    <input type="text" v-model="cloth.Model"><br>
+                </div>
+
+
+            </div>
+            <div class="container">
+                <label class="name">Gender</label>&nbsp;&nbsp;
+                <div class="mov_left">
+                    <input type="text" v-model="cloth.Gender"><br>
+                </div>
+
+
+            </div>
+            <div class="container">
+                <label class="name">Product_type</label>&nbsp;&nbsp;
+                <div class="mov_left">
+                    <input type="text" v-model="cloth.Product_type"><br>
+                </div>
+
+
+            </div>
+            <div class="container">
+                <label class="name">Material</label>&nbsp;&nbsp;
+                <div class="mov_left">
+                    <input type="text" v-model="cloth.Material"><br>
+                </div>
+
+
+            </div>
+            <div class="container">
+                <label class="name">Season</label>&nbsp;&nbsp;
+                <div class="mov_left">
+                    <input type="text" v-model="cloth.Season"><br>
+                </div>
+
+
+            </div>
+            <div class="container">
+                <label class="name">Price</label>&nbsp;&nbsp;
+                <div>
+                    <input type="text" v-model="cloth.Price"><br>
+                </div>
+
+
+            </div>
+            
+                <button class="button" v-on:click="update(cloth.id)">Save</button>
+            
+            <p>{{message}}</p>
+        </ul>
+    </div>
+
+    <script src="src/update.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles/details.css" />
+    <script type="text/javascript" src="libs/vue.js"></script>
+    <script type="text/javascript" src="libs/axios.js"></script>
+</head>
+
+<div class="title">Clothes</div>
+
+<body style="background-color: rgb(247, 255, 255);">
+    
+    <div id="details">
+
+        <a href="index.html" class="home-btn">Home</a>
+        
+        <div style="text-align: center;">
+            <a href="index.html"></a>
+            <h1>Detalii pentru produsul cu id-ul: {{ id }}</h1>
+        </div>
+        
+
+        <div class="container">
+            <div class="custom"></div>
+            <div class="label" style="font-size: 25px;">Name:</div>
+            <div class="value"style="font-size: 25px;">{{cloth.Name}}</div>
+        </div>
+        <div class="container">
+            <div class="custom"></div>
+            <div class="label">Size:</div>
+            <div class="value">{{cloth.Size}}</div>
+        </div>
+        <div class="container">
+            <div class="custom"></div>
+            <div class="label">Color:</div>
+            <div class="value">{{cloth.Color}}</div>
+        </div>
+        <div class="container">
+            <div class="custom"></div>
+            <div class="label">Model:</div>
+            <div class="value">{{cloth.Model}}</div>
+        </div>
+        <div class="container">
+            <div class="custom"></div>
+            <div class="label">Gender:</div>
+            <div class="value">{{cloth.Gender}}</div>
+        </div>
+        <div class="container">
+            <div class="custom"></div>
+            <div class="label">Product_type:</div>
+            <div class="value">{{cloth.Product_type}}</div>
+        </div>
+        <div class="container">
+            <div class="custom"></div>
+            <div class="label">Material:</div>
+            <div class="value">{{cloth.Material}}</div>
+        </div>
+        <div class="container">
+            <div class="custom"></div>
+            <div class="label">Season:</div>
+            <div class="value">{{cloth.Season}}</div>
+        </div>
+        <div class="container">
+            <div class="custom"></div>
+            <div class="label">Price:</div>
+            <div class="value">{{cloth.Price}}&nbsp;Euro</div>
+        </div>
+
+    </div>
+    </div>
+    <script src="src/details.js"></script>
+</body>
+
+</html>

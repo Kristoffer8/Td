@@ -1,0 +1,119 @@
+.container {
+    display:flex;
+    background-color: #009b05;
+    padding:10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width:30%;
+    margin: auto;
+}
+
+.label {
+    font-size: x-large;
+    padding:20px;
+    flex:1;
+    background-color:rgb(0, 196, 42);
+    text-align: center;
+}
+
+.value {
+    font-size: x-large;
+    padding:20px;
+    flex:1;
+    background-color:rgb(58, 245, 98);
+    text-align: center;
+}
+.name{
+    width: 40%;
+}
+
+.button {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center; 
+    display: flex;
+    position: relative;
+    background-color:rgb(12, 170, 12);
+    border: none;
+    font-size: 28px;
+    color: black;
+    padding: 10px;
+    width: 190px;
+    text-align: center;
+
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center; 
+    display: flex;
+    position: relative;
+    background-color: #047708;
+    border: none;
+    font-size: 28px;
+    color: whitesmoke;
+    padding: 10px;
+    width: 190px;
+    text-align: center;
+
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .title {
+    text-align: center;
+    background-color: green;
+    padding: 15px 15px 5px 10px;
+    color: white;
+    font-size: 30px;
+  }
+
+  .home-btn{
+    margin-top: 10px;
+    justify-content: center; 
+    display: flex;
+    position: relative;
+    background-color: rgb(12, 170, 12);
+    border: none;
+    font-size: 15px;
+    color: black;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+  
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .home-btn:hover {
+    margin-top: 10px;
+    justify-content: center; 
+    display: flex;
+    position: relative;
+    background-color:#047708;
+    border: none;
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+  
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .title {
+    text-align: left;
+    background-color: green;
+    padding: 15px 15px 5px 10px;
+    color: white;
+    font-size: 25px;
+  }
