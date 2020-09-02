@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+  <meta content="utf-8" http-equiv="encoding" />
+  <title>Users manager</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/vue-material.css" />
+  <script type="text/javascript" src="libs/vue.js"></script>
+  <script type="text/javascript" src="libs/vue-material.js"></script>
+  <script type="text/javascript" src="libs/axios.js"></script>
+  <script type="text/javascript" src="src/users-service.js"></script>
+</head>
+
+<body>
+  <div id="app">
+
+    <div class="title">Cars </div>
+
+    <a href="index.html" class="home-btn">Home</a>
+
+
+    <ul class="user-list" style="margin-left: auto;margin-right: auto; text-align: center; font-size: 20px; padding-top: 10px;">
+
+
+      <div class="container2">
+        <div class="custom"></div>
+        <div class="label">Mark:</div>
+        <div class="value"><input type="text"  v-model="car.Mark"></div>
+    </div>
+    <div class="container2">
+        <div class="custom"></div>
+        <div class="label">Model:</div>
+        <div class="value"><input type="text" v-model="car.Model"></div>
+    </div>
+    <div class="container2">
+        <div class="custom"></div>
+        <div class="label">Chassis_code:</div>
+        <div class="value"><input type="text" v-model="car.Chassis_code"></div>
+    </div>
+    <div class="container2">
+      <div class="custom"></div>
+      <div class="label">Engine:</div>
+      <div class="value"><input type="text" v-model="car.Engine"></div>
+  </div>
+    <div class="container2">
+        <div class="custom"></div>
+        <div class="label">Cilindrical_capacity:</div>
+        <div class="value"><input type="text" v-model="car.Cilindrical_capacity"></div>
+    </div>
+    <div class="container2">
+        <div class="custom"></div>
+        <div class="label">Color:</div>
+        <div class="value"><input type="text" v-model="car.Color"></div>
+    </div>
+    <div class="container2">
+        <div class="custom"></div>
+        <div class="label">Power:</div>
+        <div class="value"><input type="text" v-model="car.Power"></div>
+        
+    </div>
+    <div class="container2">
+      <div class="custom"></div>
+      <div class="label">Vehicle_type:</div>
+      <div class="value"><input type="text" v-model="car.Vehicle_type"></div>
+
+    </div>
+    <div class="container2">
+      <div class="custom"></div>
+      <div class="label">Manufacture_year:</div>
+      <div class="value"><input type="text" v-model="car.Manufacture_year"></div>
+
+    </div>
+    <div class="container2">
+      <div class="custom"></div>
+      <div class="label">Mileage:</div>
+      <div class="value"><input type="text" v-model="car.Mileage"></div>
+      
+  </div>
+  <div class="container2">
+    <div class="custom"></div>
+    <div class="label">Price:</div>
+    <div class="value"><input type="text" v-model="car.Price"></div>
+    
+</div>
+    
+   
+    <button class="add-btn"  v-on:click="add()">Add Item</button>
+   
+
+    </ul>
+  </div>
+  <script src="src/add.js"></script>
+</body>
+
+</html>

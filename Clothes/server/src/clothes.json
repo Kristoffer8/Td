@@ -1,17 +1,5 @@
 [
     {
-        "id": 1,
-        "Name": "Wide t-shirt",
-        "Size": "XL",
-        "Color": "Red",
-        "Model": "With flowers",
-        "Gender": "Female",
-        "Product_type": "Body",
-        "Material": "Cotton",
-        "Season": "Summer",
-        "Price": "40"
-    },
-    {
         "id": 2,
         "Name": "Top",
         "Size": "XXL",
@@ -21,7 +9,7 @@
         "Product_type": "Body",
         "Material": "Cotton",
         "Season": "Summer",
-        "Price": "45"
+        "Price": "500"
     },
     {
         "id": 3,
@@ -130,5 +118,29 @@
         "Material": "Polyester and cotton",
         "Season": "Summer",
         "Price": "40"
+    },
+    {
+        "Name": "fgg",
+        "Size": "dsds",
+        "Color": "sdsd",
+        "Model": "sdsds",
+        "Gender": "sdsd",
+        "Product_type": "dssd",
+        "Material": "sdsd",
+        "Season": "sds",
+        "Price": "ds",
+        "id": 12
+    },
+    {
+        "Name": "1111",
+        "Size": "asdas",
+        "Color": "asdas",
+        "Model": "asda",
+        "Gender": "sadasd",
+        "Product_type": "sdadsa",
+        "Material": "dasda",
+        "Season": "asd",
+        "Price": "asd",
+        "id": 13
     }
 ]

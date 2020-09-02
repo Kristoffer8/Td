@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+  <meta content="utf-8" http-equiv="encoding" />
+  <title>Users manager</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/vue-material.css" />
+  <script type="text/javascript" src="libs/vue.js"></script>
+  <script type="text/javascript" src="libs/vue-material.js"></script>
+  <script type="text/javascript" src="libs/axios.js"></script>
+  <script type="text/javascript" src="src/users-service.js"></script>
+</head>
+
+<body>
+  <div id="app">
+
+    <div class="title">Cars
+      <div class="mov_left" style="margin-top: -5px;">
+      <button  v-on:click="addcar()">Add new cars</button>
+      </div>
+    </div>
+
+    <p style="text-align: center" v-if="cars.length == 0">No cars found</p>
+
+    <ul class="user-list" v-if="cars.length > 0">
+      <li>
+        <div class="user-row-header">
+          <div class="product-name">Mark</div>
+          <div class="product-size">Model</div>
+          <div class="product-color">Engine</div>
+          <div class="product-price">Price</div>
+        </div>
+      </li>
+
+      <li v-for="(car,index) in cars">
+        <div class="sizes" >
+          <div class="label2">
+        <div class="label" style="display: inline-block; width: 20%;" >
+
+          <a :href="'details.html?id='+car.id">{{ car.Mark }}</a>
+          
+        </div>
+        <div class="label" style="display: inline-block; width: 20%;" >
+          <a>{{ car.Mark }}</a>
+        </div>
+
+        <div class="label" style="display: inline-block; width: 20%;" >
+          <a>{{ car.Engine }}</a>
+        </div>
+
+        <div class="label" style="display: inline-block; width: 20%;" >
+          <a> {{ car.Price }}&nbsp;Euro</a>
+        </div>
+         
+          <div class="mov_left">
+              
+                  <button  v-on:click="deleteCar(index)">Delete</button>&nbsp;&nbsp;&nbsp;
+                  <a :href="'update.html?id='+car.id" target="_self">Update</a>
+
+          </div>
+          </div> 
+         </div>
+        
+      </li>
+    </ul>
+  </div>
+  <script src="src/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<html>
+
+<head>
+  
+    <link rel="stylesheet" href="styles/details.css" />
+    <script type="text/javascript" src="libs/vue.js"></script>
+    <script type="text/javascript" src="libs/axios.js"></script>
+</head>
+<body>
+   
+    <div class="title">Cars
+        <div class="mov_left" style="margin-top: -5px;">
+        </div>
+    </div>
+    
+    <a href="index.html" class="home-btn">Home</a>
+
+    <div id="update">
+
+        <ul class="user-list">
+
+
+            <div class="container">
+                <label class="name">Mark</label>&nbsp;&nbsp;
+                <div class="mov_left">
+                    <input type="text" v-model="car.Mark"><br>
+                </div>
+
+            </div>
+            <div class="container">
+                <label class="name">Model</label>&nbsp;&nbsp;
+                <div class="mov_left">
+                    <input type="text" v-model="car.Model"><br>
+                </div>
+
+
+            </div>
+            <div class="container">
+                <label class="name">Chassis_code</label>&nbsp;&nbsp;
+                <div class="mov_left">
+                    <input type="text" v-model="car.Chassis_code"><br>
+                </div>
+
+
+            </div>
+            <div class="container">
+                <label class="name">Engine</label>&nbsp;&nbsp;
+                <div class="mov_left">
+                    <input type="text" v-model="car.Engine"><br>
+                </div>
+
+
+            </div>
+            <div class="container">
+                <label class="name">Cilindrical_capacity</label>&nbsp;&nbsp;
+                <div class="mov_left">
+                    <input type="text" v-model="car.Cilindrical_capacity"><br>
+                </div>
+
+
+            </div>
+            <div class="container">
+                <label class="name">Color</label>&nbsp;&nbsp;
+                <div class="mov_left">
+                    <input type="text" v-model="car.Color"><br>
+                </div>
+
+
+            </div>
+            <div class="container">
+                <label class="name">Power</label>&nbsp;&nbsp;
+                <div class="mov_left">
+                    <input type="text" v-model="car.Power"><br>
+                </div>
+
+
+            </div>
+            <div class="container">
+                <label class="name">Vehicle_type</label>&nbsp;&nbsp;
+                <div class="mov_left">
+                    <input type="text" v-model="car.Vehicle_type"><br>
+                </div>
+
+            </div>
+            <div class="container">
+                <label class="name">Manufacture_year</label>&nbsp;&nbsp;
+                <div class="mov_left">
+                    <input type="text" v-model="car.Manufacture_year"><br>
+                </div>
+
+            </div>
+            <div class="container">
+                <label class="name">Mileage</label>&nbsp;&nbsp;
+                <div class="mov_left">
+                    <input type="text" v-model="car.Mileage"><br>
+                </div>
+
+
+            </div>
+            <div class="container">
+                <label class="name">Price</label>&nbsp;&nbsp;
+                <div>
+                    <input type="text" v-model="car.Price"><br>
+                </div>
+
+
+            </div>
+            
+                <button class="button" v-on:click="update(car.id)">Save</button>
+            
+            <p>{{message}}</p>
+        </ul>
+    </div>
+
+    <script src="src/update.js"></script>
+</body>
+
+</html>

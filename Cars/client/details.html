@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles/details.css" />
+    <script type="text/javascript" src="libs/vue.js"></script>
+    <script type="text/javascript" src="libs/axios.js"></script>
+</head>
+
+<div class="title">Cars</div>
+
+<body style="background-color: rgb(247, 255, 255);">
+    
+    <div id="details">
+
+        <a href="index.html" class="home-btn">Home</a>
+        
+        <div style="text-align: center;">
+            <a href="index.html"></a>
+            <h1>Detalii pentru produsul cu id-ul: {{ id }}</h1>
+        </div>
+        
+
+        <div class="container">
+            <div class="custom"></div>
+            <div class="label" style="font-size: 30px;">Mark:</div>
+            <div class="value"style="font-size: 30px;">{{ car.Mark }}</div>
+        </div>
+        <div class="container">
+            <div class="custom"></div>
+            <div class="label">Model:</div>
+            <div class="value">{{ car.Model }}</div>
+        </div>
+        <div class="container">
+            <div class="custom"></div>
+            <div class="label">Chassis_code:</div>
+            <div class="value">{{car.Chassis_code}}</div>
+        </div>
+        <div class="container">
+            <div class="custom"></div>
+            <div class="label">Engine:</div>
+            <div class="value">{{car.Engine}}</div>
+        </div>
+        <div class="container">
+            <div class="custom"></div>
+            <div class="label">Cilindrical_capacity:</div>
+            <div class="value">{{car.Cilindrical_capacity}}</div>
+        </div>
+        <div class="container">
+            <div class="custom"></div>
+            <div class="label">Color:</div>
+            <div class="value">{{car.Color}}</div>
+        </div>
+        <div class="container">
+            <div class="custom"></div>
+            <div class="label">Power:</div>
+            <div class="value">{{car.Power}}</div>
+        </div>
+        <div class="container">
+            <div class="custom"></div>
+            <div class="label">Vehile_type:</div>
+            <div class="value">{{car.Vehile_type}}</div>
+        </div>
+        <div class="container">
+            <div class="custom"></div>
+            <div class="label">Manufacture_year:</div>
+            <div class="value">{{car.Manufacture_year}}</div>
+        </div>
+        <div class="container">
+            <div class="custom"></div>
+            <div class="label">Mileage:</div>
+            <div class="value">{{car.Mileage}}</div>
+        </div>
+        <div class="container">
+            <div class="custom"></div>
+            <div class="label">Price:</div>
+            <div class="value">{{car.Price}}&nbsp;Euro</div>
+        </div>
+
+    </div>
+    </div>
+    <script src="src/details.js"></script>
+</body>
+
+</html>
