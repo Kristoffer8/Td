@@ -1,7 +1,7 @@
 var api = require('./src/api.js').app;
 const fs = require('fs');
 const carsFilepath = './src/cars.json';
-const carsvar = require('./src/cars.json');
+const caresvar = require('./src/cars.json');
 
 api.get('/', function (request, response) {
   response.json('NodeJS REST API');
@@ -41,7 +41,7 @@ api.delete('/cars/:index', function (request, response) {
   // delete din fisier pe baza unui id
 
   deletecarbyID(request.params.index)
- // carsvar.splice(request.params.index, 1);
+ // caresvar.splice(request.params.index, 1);
 
   response.json('User with index ' + request.params.index + ' was deleted');
 });
@@ -62,7 +62,7 @@ function getCars() {
 }
 
 function saveCar(car) {
-  let cars = getCars();// cars json din fisier
+  let cars = getCars();// car json din fisier
   let maxId = getMaxId(cars);  // get maximum id form cars array
   car.id = maxId+1;// generare id unic
   cars.push(car);// adaugare anvelopa noua in array
@@ -86,7 +86,7 @@ function getMaxId(cars) {
 }
 
 function updatecarById(data,id){
-  let cars = getCars();// cars json din fisier
+  let cars = getCars();// car json din fisier
   console.log(data,id)
   for(var i=0; i<cars.length; i++) {
     if(id == cars[i].id)
@@ -116,10 +116,10 @@ function deletecarbyID(id){
 
 
 function getCarById(id){
-  let cars = getCars();// cars json din fisier
+  let cars = getCars();// car json din fisier
   let selectedCar = null;
   for(var i=0; i<cars.length; i++) {
-    if(id == cars[i].id) selectedCar = Cars[i];
+    if(id == cars[i].id) selectedCar = cars[i];
   }
   return selectedCar;
 }
